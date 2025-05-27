@@ -1,0 +1,22 @@
+---
+import Social from './Social.astro';
+
+const github_platform = "github";
+const github_username = "dmonder";
+
+const youtube_platform = "youtube";
+const youtube_username = "dmonder";
+---
+
+<footer>
+  <p>Learn more about my projects on <Social platform={github_platform} username={github_username} />!</p>
+  <p>...and also on <Social platform={youtube_platform} username={youtube_username} />.</p>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
